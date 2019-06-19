@@ -18,12 +18,12 @@
           <h1>HTML Elements</h1>
           <hr>
           <div>
-            <a href="#home"><font color="blue" size="2"><u><b id="home">Home &nbsp</b></u></font></a>
-            <a href="#header"><font color="blue" size="2"><u><b>Headers  &nbsp</b></u></font></a>
-            <a href="#text"><font color="blue" size="2"><u><b>Text  &nbsp</b></u></font></a>
-            <a href="#list"><font color="blue" size="2"><u><b>List  &nbsp</b></u></font></a>
-            <a href="#table"><font color="blue" size="2"><u><b>Table  &nbsp</b></u></font></a>
-            <a href="#blockquote"><font color="blue" size="2"><u><b>Blockquates  &nbsp</b></u></font></a>
+            <a href="#home"> <u> <b id="home">Home &nbsp;</b></u></a>
+            <a href="#header"> <u> <b>Headers  &nbsp;</b></u></a>
+            <a href="#text"> <u> <b>Text  &nbsp;</b></u></a>
+            <a href="#list"> <u> <b>List  &nbsp;</b></u></a>
+            <a href="#table"> <u> <b>Table  &nbsp;</b></u></a>
+            <a href="#blockquote"> <u> <b>Blockquates  &nbsp;</b></u></a>
           </div>
           <hr>
           <p>
@@ -58,17 +58,16 @@
           <hr>
           Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2,
           because we have to use only one h1 on the page, and it is commonly used inside header
-          <p></p>
           <h2 id="header">Header 2</h2>
-          <h3>Header 3<h3>
-          <h4>Header 4<h4>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
           <h5>Header 5</h5>
           <h6>Header 6</h6>
           <hr>
           <h2 id="text">Text formats</h2>
-          <article>Article Text
-          <article><h2>Article title</h2></article>
-          <article>Article description</article>
+          <article><h2>Article Text</h2>
+          <article><h3>Article title</h3></article>
+          <article><h2>Article description</h2></article>
           <h3>Preformatted Text</h3>
           </article>
           <pre>
@@ -91,7 +90,7 @@
           <ul type="square" id="list">
             <li>Eggs</li>
             <li>Meat</li>
-              <ul>
+              <ul type="square">
                 <li>Chicken</li>
                 <li>Beef</li>
                 <li>Pork</li>
@@ -108,7 +107,7 @@
                 <li>Upload to GitHub</li>
               </ol>
             <li>Enjoy your day</li>
-          </ol>"><fo
+          </ol>
           <h2>Definition List</h2>
           <dl>
             <dt>HTML</dt>
@@ -125,11 +124,11 @@
           </select>
           <hr>
           <hr>
-          <b><h2>Table</h2></b>
+          <h2><b>Table</b></h2>
           <table id="table">
             <tr>
-              <td><font color="grey"><b>Cities</b></font></td>
-              <td><font color="grey"><b>Technologies</b></font></td>
+              <td><b>Cities</b></td>
+              <td><b>Technologies</b></td>
             </tr>
             <tr>
               <td>Lviv</td>
@@ -176,7 +175,7 @@
               <input>
             </fieldset>
             <fieldset>
-              <label type="Password">Password</label>
+              <label>Password</label>
               <input>
             </fieldset>
             <textarea name="name" rows="8" cols="80">
@@ -184,7 +183,7 @@
             <input type="submit" name="Submit" value="Submit">
           </form>
           <footer>
-            &copy Copyright Epam Systems
+            &copy; Copyright Epam Systems
           </footer>
         </div>
       </div>
