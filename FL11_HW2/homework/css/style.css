@@ -1,24 +1,73 @@
 
 @media print{
   .tm-sidebar,
-  .tm-team-img,{
-  /* .heading,
-  .blocks,
+  .tm-team-img,
+  .boxes>li,
+  .tm-content-box>img,
+  .carousel-indicators,
   #about,
-  #ideas,
-  #ideas+.tm-content-box { */
+  #contact  {
     display: none;
-}
-  .tm-content-box .flex-2-col {
-    max-width: 100%;
   }
 
-  h2.tm-section-title{
+  #home,
+  .text-xs-center {
+    margin-top: -5%;
+  }
+
+  .tm-main-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tm-team-description-container {
+    margin: auto;
+    max-width: 110%;
+    text-align: center;
+  }
+
+  h2.tm-section-title,
+  .padding-medium h2{
     color: lightskyblue;
     text-indent: 0;
     text-align: center;
+    text-transform: uppercase;
+  }
+
+   .padding-medium a {
+      color: #000;
+  }
+
+  .padding-medium li:first-letter {
+      font-size: 30px;
+      color: lightskyblue;
+  }
+
+  li{
+  list-style-type: none;
+  margin: 0 30% 0 30%;
+  }
+
+  li:nth-child(odd){
+    text-align: left;
+  }
+  li:nth-child(even){
+    text-align: right;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 }
+
+
+  /* .tm-content-box .flex-2-col {
+    max-width: 140%;
+  } */
+
+
+
+/* } */
   /* .tm-section-description {
     max-width: 100%;
     text-align: center;
@@ -66,10 +115,7 @@
 
   @media screen {
 
-  p:first-letter {
-    font-size: 30px;
-    color: lightskyblue;
-  }
+
   li.box.box-bg:hover {
     background: lightskyblue;
   }
