@@ -1,0 +1,190 @@
+.underline, .header .header_heading::before, main.section p.section_text::before, p.section_card_heading::before, .section_banner .section_banner_heading::before {
+  content: "";
+  background-color: #FF3300;
+  z-index: -1;
+  position: absolute; }
+
+body {
+  background-color: #272532;
+  margin: 0px;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  color: #fff; }
+
+.header {
+  background-image: url("../img/m-h-night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 45%;
+  padding-right: 52%;
+  background-size: 100%;
+  padding-bottom: 232px;
+  padding-left: 185px;
+  z-index: 2; }
+  .header .header_heading {
+    font-size: 85px;
+    font-weight: 800;
+    color: white;
+    float: left;
+    width: 650px;
+    letter-spacing: -0.04em;
+    margin-top: 29px;
+    z-index: 2;
+    position: relative; }
+    .header .header_heading::before {
+      height: 20px;
+      width: 350px;
+      left: 1px;
+      bottom: 15px; }
+  .header .header-wrap {
+    display: flex;
+    flex-direction: column; }
+  .header .header_text {
+    margin-bottom: 86px;
+    width: 750px; }
+
+.landing-logo img {
+  margin-top: 17px; }
+.landing-logo p {
+  font-size: 34px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 10px; }
+.landing-logo p, .landing-logo span {
+  color: white; }
+.landing-logo p > span {
+  font-size: 15px;
+  display: block;
+  margin-top: -5px; }
+
+.header_button, .section_banner .section_banner_button {
+  background-color: #DEBB00;
+  width: 180px;
+  height: 70px;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 3px; }
+
+main.section {
+  position: relative;
+  background-color: #272532;
+  text-align: center; }
+  main.section p.section_text {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 800;
+    z-index: 1; }
+    main.section p.section_text::before {
+      height: 10px;
+      width: 170px;
+      left: 933px;
+      bottom: 17px; }
+
+.section_card_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto; }
+
+.section_card {
+  background-color: #3F3C52;
+  padding: 15px;
+  width: 30%;
+  border-radius: 5px;
+  margin: 0 1% 0 1%;
+  color: #97B6D0; }
+  .section_card img.section_card_img {
+    border-radius: 4px;
+    width: 100%; }
+
+p.section_card_heading {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  font-family: "Hind", sans-serif;
+  z-index: 1;
+  position: relative; }
+  p.section_card_heading::before {
+    height: 10px;
+    width: 190px;
+    left: 146px;
+    bottom: 6px; }
+
+.section_card_text {
+  line-height: 1.7;
+  font-size: 20px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: center; }
+
+.section_banner {
+  width: 60%;
+  margin-left: 15%;
+  border-radius: 10px;
+  margin-top: 10%;
+  background: linear-gradient(90deg, #D4A700, #97004A);
+  padding: 30px 80px 18px 80px;
+  position: absolute; }
+  .section_banner p {
+    margin-bottom: 12px; }
+  .section_banner::after {
+    display: table;
+    content: "";
+    clear: both; }
+  .section_banner .section_banner_text_wrap {
+    float: left;
+    text-align: left; }
+  .section_banner .section_banner_heading {
+    font-size: 28px;
+    font-weight: 800;
+    position: relative;
+    color: white;
+    font-family: "Hind", sans-serif;
+    z-index: 2; }
+    .section_banner .section_banner_heading::before {
+      height: 10px;
+      width: 57px;
+      left: 114px;
+      bottom: 4px;
+      z-index: -1; }
+  .section_banner .section_banner_text {
+    font-size: 14px;
+    color: #97B6D0;
+    font-family: "Hind", sans-serif; }
+  .section_banner .section_banner_button {
+    float: right;
+    margin-top: 12px; }
+
+.footer {
+  background: #3F3C52;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 120px;
+  margin-top: 14%; }
+
+.footer-cr {
+  margin-right: 10%; }
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; }
+  .footer-wrap .footer_text {
+    max-width: 20%; }
+  .footer-wrap p.footer_text, .footer-wrap span {
+    font-size: 14px; }
+
+.footer_logo.landing-logo {
+  margin-left: 10%; }
+  .footer_logo.landing-logo p, .footer_logo.landing-logo span {
+    color: white; }
+
+/*# sourceMappingURL=style2.css.map */

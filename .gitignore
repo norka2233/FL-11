@@ -1,3 +1,6 @@
 */task
 */examples
 
+.sass-cache
+*/*.css.map
+FL11_HW3/homework/css/*.css.map
