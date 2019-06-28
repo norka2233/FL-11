@@ -1,0 +1,243 @@
+@import "_variables1";
+@import "_variables2";
+
+@mixin underline($height, $width, $left, $bottom) {
+  height: $height;
+  width: $width;
+  left: $left;
+  bottom: $bottom;
+}
+
+.underline {
+  content: "";
+  background-color: $background-color-underline;
+  z-index: -1;
+  position: absolute;
+}
+
+
+$font-weight-main: (
+  "bold": 800,
+  "half-bold": 700,
+  "normal": 600
+);
+
+body {
+  background-color: $background-color;
+  margin: 0px;
+  font-family: $font-family-one;
+  font-weight: map-get($font-weight-main, "normal");
+  color: $font-color-dark;
+}
+
+.header {
+  background-image: $background-picture-header-one;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 45%;
+  padding-right: 52%;
+  background-size: 100%;
+  padding-bottom: 232px;
+  padding-left: 185px;
+  z-index: 2;
+    .header_heading {
+      font-size: 85px;
+      font-weight: map-get($font-weight-main, "bold");
+      color:$font-color-peak-dark;
+      float: left;
+      width: 650px;
+      letter-spacing: -0.04em;
+      margin-top: 29px;
+      z-index: 2;
+      position: relative;
+      &::before {
+        @extend .underline;
+        @include underline(20px, 350px, 1px, 15px);
+      }
+    }
+
+    .header-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .header_text {
+    margin-bottom: 86px;
+    width: 750px;
+  }
+
+}
+
+.landing-logo {
+
+  img {
+    margin-top: 17px;
+  }
+  p {
+    font-size: 34px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: map-get($font-weight-main, "normal");
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  p, span {
+    color: $font-color-peak-dark;
+  }
+  p>span {
+    font-size: 15px;
+    display: block;
+    margin-top: -5px;
+  }
+}
+
+.header_button {
+  background-color: $background-color-button-green;
+  width: 180px;
+  height: 70px;
+  color: white;
+  font-weight: map-get($font-weight-main, "bold");
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+main.section {
+  position: relative;
+  background-color: $background-color;
+  text-align: center;
+  p.section_text {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: map-get($font-weight-main, "bold");
+    z-index: 1;
+    &::before {
+      @extend .underline;
+      @include underline( 10px, 170px, 933px, 17px);
+  }
+ }
+}
+
+.section_card_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.section_card {
+  background-color: $background-color-dark;
+  padding: 15px;
+  width: 30%;
+  border-radius: 5px;
+  margin: 0 1% 0 1%;
+  color: $font-color-semi-white;
+    img.section_card_img {
+      border-radius: 4px;
+      width: 100%;
+  }
+}
+
+p.section_card_heading {
+  font-size: 30px;
+  color: $font-color-white;
+  font-weight: map-get($font-weight-main, "half-bold");
+  font-family: $font-family-one;
+  z-index: 1;
+  position: relative;
+  &::before {
+    @extend .underline;
+    @include underline( 10px, 190px, 146px, 6px);
+  }
+}
+
+.section_card_text {
+  line-height: 1.7;
+  font-size: 20px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.section_banner {
+  width: 60%;
+  margin-left: 15%;
+  border-radius: 10px;
+  margin-top: 10%;
+
+  background: linear-gradient(
+    90deg,
+    $background-gradient-left,
+    $background-gradient-right
+  );
+  padding: 30px 80px 18px 80px;
+  position: absolute;
+  p {
+    margin-bottom: 12px;
+  }
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  .section_banner_text_wrap {
+    float: left;
+    text-align: left;
+  }
+  .section_banner_heading {
+    font-size: 28px;
+    font-weight: map-get($font-weight-main, "bold");
+    position: relative;
+    color: $font-color-peak-dark;
+    font-family: $font-family-one;
+    z-index: 2;
+    &::before {
+      @extend .underline;
+      @include underline( 10px, 57px, 114px, 4px);
+      z-index: -1;
+    }
+  }
+  .section_banner_text {
+   font-size: 14px;
+   color: $font-color-semi-white;
+   font-family: $font-family-one;
+ }
+ .section_banner_button {
+    @extend .header_button;
+    float: right;
+    margin-top: 12px;
+  }
+}
+
+.footer {
+  background: $background-color-dark;
+  color: $font-color-white;
+  padding-bottom: 40px;
+  padding-top: 120px;
+  margin-top: 14%;
+}
+.footer-cr {
+  margin-right: 10%;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  .footer_text {
+    max-width: 20%;
+  }
+  p.footer_text,span {
+    font-size: 14px;
+  }
+}
+
+.footer_logo.landing-logo {
+  margin-left: 10%;
+  p,span {
+    color:$font-color-white;
+  }
+}
