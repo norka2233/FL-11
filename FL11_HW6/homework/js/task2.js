@@ -5,14 +5,11 @@ const c = prompt('Enter length of side C');
 if (c < a + b & a < c + b & b < c + a) {
   if (a === b & b === c & a === c) {
     console.log('Equivalent triangle')
-  }
-  else if (a === b || b === c || a === c) {
+  } else if (a === b || b === c || a === c) {
     console.log('Isosceles triangle')
-  }
-  else {
+     } else {
     console.log('Normal triangle');
-  }
-}
-else {
+    }
+} else {
   console.log('Triangle doesn’t exist');
 }
