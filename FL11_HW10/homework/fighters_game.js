@@ -57,20 +57,20 @@ class Fighter{
     }
 }
 
-function battle(fighterOne, fighterTwo) {
-    if(fighterOne.getHealth === 0) {
-        console.log(`${fighterOne.getName} is dead and can't fight`);
-    } else if(fighterTwo.getHealth === 0) {
-        console.log(`${fighterTwo.getName} is dead and can't fight`);
+function battle(fighter1, fighter2) {
+    if(fighter1.getHealth === 0) {
+        console.log(`${fighter1.getName} is dead and can't fight`);
+    } else if(fighter2.getHealth === 0) {
+        console.log(`${fighter2.getName} is dead and can't fight`);
     } else {
-        while(fighterOne.getHealth > 0 && fighterTwo.getHealth > 0) {
-            fighterOne.attack(fighterTwo);
-            if(fighterTwo.getHealth > 0) {
-                fighterTwo.attack(fighterOne);
+        while(fighter1.getHealth > 0 && fighter2.getHealth > 0) {
+            fighter1.attack(fighter2);
+            if(fighter2.getHealth > 0) {
+                fighter2.attack(fighter1);
             }
         }
-        fighterOne.getHealth === 0 ? fighterOne.addLoss() : fighterOne.addWin();
-        fighterTwo.getHealth === 0 ? fighterTwo.addLoss() : fighterTwo.addWin();
+        fighter1.getHealth === 0 ? fighter1.addLoss() : fighter1.addWin();
+        fighter2.getHealth === 0 ? fighter2.addLoss() : fighter2.addWin();
 
     }
 }
