@@ -1,3 +1,4 @@
+
 class Fighter{
     constructor(obj) {
      this.name = obj.name;
@@ -44,8 +45,7 @@ class Fighter{
     heal(hpAmount) {
         if (this.hp + hpAmount >= this.totalHp) {
             return this.getHealth;
-        }
-        else {
+        } else {
             this.hp += hpAmount;
         }
     }
@@ -57,3 +57,22 @@ class Fighter{
     }
 }
 
+function battle(fighterOne, fighterTwo) {
+    if(fighterOne.getHealth === 0) {
+        console.log(`${fighterOne.getName} is dead and can't fight`);
+    } else if(fighterTwo.getHealth === 0) {
+        console.log(`${fighterTwo.getName} is dead and can't fight`);
+    } else {
+        while(fighterOne.getHealth > 0 && fighterTwo.getHealth > 0) {
+            fighterOne.attack(fighterTwo);
+            if(fighterTwo.getHealth > 0) {
+                fighterTwo.attack(fighterOne);
+            }
+        }
+        fighterOne.getHealth === 0 ? fighterOne.addLoss() : fighterOne.addWin();
+        fighterTwo.getHealth === 0 ? fighterTwo.addLoss() : fighterTwo.addWin();
+
+    }
+}
+const fighterFirst = new Fighter({ name: 'John', damage: 20, agility: 25, hp: 100 });
+const fighterSec = new Fighter({ name: 'Jim', damage: 10, agility: 40, hp: 120 });
