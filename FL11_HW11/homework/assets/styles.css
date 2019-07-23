@@ -1,0 +1,62 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+    color: #42b5fe;
+}
+
+#to-do-list {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 5px solid #e4f1fe;
+}
+
+#add-new-action {
+    width: 92%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#add-box {
+    font-size: 40px;
+    margin-left: 10px;
+    color: #c7d0d8;
+}
+
+#warning-message {
+    color: red;
+}
+
+.material-icons {
+    font-size: 28px;
+    color: #89c4f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.item-checkbox-off {
+    color: gray;
+}
+
+.item-checkbox-on {
+    color: #000;
+    background: gray;
+}
+
+.item-text {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.delete-button {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+
